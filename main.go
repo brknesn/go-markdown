@@ -24,7 +24,7 @@ var cfg config
 func main() {
 	// create the app
 	a := app.New()
-	
+	a.Settings().SetTheme(&myTheme{})
 	// create the window
 	window := a.NewWindow("Markdown Editor")
 
